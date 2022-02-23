@@ -50,3 +50,4 @@ Route::get('/welcome','PagesController@welcome')->name('welcome');
     });
 */
 
+Route::resource('posts', 'PostsController');
