@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Post;
+use DB;
 
 class PostsController extends Controller
 {
@@ -13,7 +15,23 @@ class PostsController extends Controller
      */
     public function index()
     {
-        //
+        // !Different use cases of Elequent ORM
+
+        // $posts = Post::orderBy('title', 'desc')->get();
+        // $posts = Post::orderBy('title', 'desc')->take(2)->get();
+        // $posts = Post::where('title', 'Post 1')->get();
+
+        // ! Pagination in Elequent ORM
+        $posts = Post::orderBy('title', 'desc')->paginate(1);
+
+        // ! using SQL instead of Elequent ORM
+
+        // $posts = DB::select( 'SELECT * FROM posts');
+
+        // ! Select all posts using  Elequent ORM
+
+        // $posts = Post::all();
+        return view('template.posts.index' ) -> with('posts', $posts);
     }
 
     /**
@@ -45,7 +63,8 @@ class PostsController extends Controller
      */
     public function show($id)
     {
-        //
+        $post = Post::find($id);
+        return view('template.posts.show', compact('post'));
     }
 
     /**
