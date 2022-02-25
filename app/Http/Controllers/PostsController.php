@@ -15,20 +15,21 @@ class PostsController extends Controller
      */
     public function index()
     {
-        // !Different use cases of Elequent ORM
+        // * Different use cases of Elequent ORM
 
         // $posts = Post::orderBy('title', 'desc')->get();
         // $posts = Post::orderBy('title', 'desc')->take(2)->get();
         // $posts = Post::where('title', 'Post 1')->get();
 
-        // ! Pagination in Elequent ORM
-        $posts = Post::orderBy('title', 'desc')->paginate(1);
+        // * Pagination in Elequent ORM
 
-        // ! using SQL instead of Elequent ORM
+        $posts = Post::orderBy('created_at', 'desc')->paginate(10);
+
+        // // using SQL instead of Elequent ORM
 
         // $posts = DB::select( 'SELECT * FROM posts');
 
-        // ! Select all posts using  Elequent ORM
+        // * Select all posts using  Elequent ORM
 
         // $posts = Post::all();
         return view('template.posts.index' ) -> with('posts', $posts);
@@ -41,7 +42,7 @@ class PostsController extends Controller
      */
     public function create()
     {
-        //
+        return view('template.posts.create');
     }
 
     /**
@@ -52,7 +53,20 @@ class PostsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request,[
+            'title'=> 'required',
+            'body' => 'required'
+
+        ]);
+
+        // * Create Post
+        $post = new Post;
+        $post -> title = $request ->input('title');
+        $post -> body = $request ->input('body');
+        $post -> save();
+
+        return redirect('/posts') ->with('success','Post Created');
+
     }
 
     /**
