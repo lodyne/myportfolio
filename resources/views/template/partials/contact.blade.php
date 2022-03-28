@@ -5,16 +5,16 @@
 
           <div class="col-lg-6">
             <div class="contact-contact">
+                <div class="section-title">
+                    <h2 class="head-title mb-30">GET IN TOUCH</h2>
+                </div>
 
-              <h2 class="mb-30">GET IN TOUCH</h2>
-
-              <ul class="contact-details">
-                <li><span>23 Main, Street</span></li>
-                <li><span>New York, United States</span></li>
-                <li><span>+88 01912704287</span></li>
-                <li><span>example@example.com</span></li>
-              </ul>
-
+                <ul class="contact-details">
+                    {{-- <li><span>23 Main, Street</span></li> --}}
+                    <li><i class="bi bi-geo-alt px-2"></i><span>Dar es Salaam, Tanzania</span></li>
+                    <li><i class="bi bi-whatsapp px-2"></i></i><span>+255 685487031</span></li>
+                    <li><i class="bi bi-envelope px-2"></i><span>lodgmtui@gmail.com</span></li>
+                </ul>
             </div>
           </div>
 
@@ -53,7 +53,8 @@
                 </div>
 
                 <div class="mt-0">
-                  <input type="submit" class="btn btn-defeault btn-send" value="Send message">
+                  <input type="submit" class="btn btn-default btn-send"  style= "background-color:#212121" onmouseover="hoverBtn(this)"  onmouseout="outBtn(this)"value="Send message">
+
                 </div>
 
               </div>

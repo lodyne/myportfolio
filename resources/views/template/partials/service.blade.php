@@ -1,4 +1,9 @@
-<div id="services">
+<div id="services" class="paddsection-service">
+    <div class="container">
+        <div class="section-title text-center">
+          <h2 class="head-title">My Services</h2>
+        </div>
+    </div>
     <div class="container">
 
       <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">

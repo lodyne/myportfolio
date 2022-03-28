@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -168,8 +168,8 @@
     new Typed('.typed', {
       strings: typed_strings,
       loop: true,
-      typeSpeed: 100,
-      backSpeed: 50,
+      typeSpeed: 200,
+      backSpeed: 100,
       backDelay: 2000
     });
   }
@@ -236,7 +236,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -259,4 +259,14 @@
     }
   });
 
+
+
 })()
+
+function hoverBtn(x) {
+    x.style.backgroundColor = "#86c6f4";
+}
+
+function outBtn(x) {
+    x.style.backgroundColor = "#212121";
+}

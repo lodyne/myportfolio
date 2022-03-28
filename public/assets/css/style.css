@@ -1,25 +1,18 @@
-/**
-* Template Name: Folio - v4.7.0
-* Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  background: #ffffff;
-  color: #898989;
-  font-family: "Poppins", helvetica;
-  font-size: 15px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  overflow-x: hidden;
-  margin: 0 auto;
-  padding: 0;
-  box-sizing: border-box;
+    background: #ffffff;
+    color: #898989;
+    font-family: "Montserrat";
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    overflow-x: hidden;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -56,12 +49,12 @@ p {
 }
 
 ::-moz-selection {
-  background: #86c6f4;
+  background: #212121;
   color: #fff;
 }
 
 ::selection {
-  background: #86c6f4;
+  background: #212121;
   color: #fff;
 }
 
@@ -120,6 +113,16 @@ p {
   padding-bottom: 90px;
 }
 
+.paddsection-about {
+    padding-top: 90px;
+    padding-bottom: 0px;
+  }
+
+.paddsection-service {
+    padding-top: 50px;
+    padding-bottom: 0px;
+}
+
 .paddsections {
   padding-top: 90px;
   padding-bottom: 90px !important;
@@ -130,7 +133,7 @@ p {
 }
 
 .hvr-shutter-in-horizontal:hover {
-  background: #86c6f4;
+  background: #212121;
 }
 
 .mb-30 {
@@ -151,7 +154,7 @@ p {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #86c6f4;
+  background: #212121;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -163,7 +166,8 @@ p {
   line-height: 0;
 }
 .back-to-top:hover {
-  background: #c6b398;
+  /* background: #c6b398; */
+  background: #86c6f4;
   color: #fff;
 }
 .back-to-top.active {
@@ -231,7 +235,7 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 500;
   color: #7e7d7d;
@@ -271,7 +275,7 @@ p {
   font-size: 12px;
 }
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #86c6f4;
+  color: #212121;
 }
 .navbar .dropdown:hover > ul {
   opacity: 1;
@@ -356,7 +360,7 @@ p {
   color: #4b4a4a;
 }
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
-  color: #86c6f4;
+  color: #212121;
 }
 .navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
   margin: 15px;
@@ -382,7 +386,7 @@ p {
   font-size: 12px;
 }
 .navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
-  color: #86c6f4;
+  color: #212121;
 }
 .navbar-mobile .dropdown > .dropdown-active {
   display: block;
@@ -392,9 +396,14 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+  /* background: url("../img/hm1.jpg") no-repeat center center/cover;
   height: 100vh;
-  width: 100%;
+  width: 100%; */
+  background: url("../img/nubelson.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 #hero .hero-content {
@@ -414,25 +423,65 @@ p {
   color: #fff;
 }
 
-.hero-content p {
-  font-size: 13px;
+.hero-content h2 {
+  font-size: 20px;
   letter-spacing: 3px;
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: capitalize;
   color: #fff;
-  font-weight: 500;
+  font-weight: bold;
 }
 
+.hero-content h3 {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+.hero-content .btn-link{
+    background-color: transparent;
+    border: 3px solid #86c6f4;
+    border-radius:3px;
+    color: white;
+    width: 200px;
+    box-sizing:border-box;
+    padding: 15px 25px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+
+
+
+.hero-content a:hover{
+    /* background-color:#01e675; */
+    /* background-color:#212121; */
+    background-color: #FF1700;
+    border: none;
+}
 .hero-content .list-social li {
-  float: left;
-  margin-right: 20px;
+    float: left;
+    margin-right: 20px;
 }
 
 .hero-content .list-social li i {
   color: #fff;
   font-size: 15px;
 }
+
+/* .hero-content .btn-link a {
+    color: #fff;
+    font-size: 5px;
+
+} */
 
 /*--------------------------------------------------------------
 # Breadcrumbs
@@ -498,7 +547,7 @@ p {
 
 #about .div-img-bg {
   padding-bottom: 30px;
-  border: 20px solid #86c6f4;
+  border: 20px solid #212121;
 }
 
 #about .div-img-bg .about-img img {
@@ -512,15 +561,25 @@ p {
 }
 
 #about .about-descr .p-heading {
-  font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-family: "Montserrat";
+  font-size: 20px;
   text-align: left;
+  padding-left: 20px;
+
+}
+
+.section-title .p-heading{
+    font-family: "Montserrat";
+    font-size: 20px;
+
 }
 
 #about .about-descr .separator {
   max-width: 80%;
+  font-size: 18px;
   margin-bottom: 0;
   text-align: left;
+  padding-left: 20px;
 }
 
 /*--------------------------------------------------------------
@@ -542,7 +601,10 @@ p {
   text-transform: uppercase;
   display: block;
 }
+.services-block i:hover{
+    color: #86c6f4;
 
+}
 .services-block .separator {
   margin: 0;
   font-size: 13px;
@@ -551,7 +613,7 @@ p {
 
 .services-block i {
   font-size: 44px;
-  color: #86c6f4;
+  color: #212121;
   line-height: 44px;
 }
 
@@ -564,10 +626,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #86c6f4;
+  border: 1px solid #212121;
 }
 .services-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #86c6f4;
+  background-color: #212121;
 }
 
 /*--------------------------------------------------------------
@@ -598,7 +660,7 @@ p {
   transition: all 0.3s ease-in-out;
 }
 #portfolio #portfolio-flters li:hover, #portfolio #portfolio-flters li.filter-active {
-  color: #86c6f4;
+  color: #212121;
 }
 #portfolio #portfolio-flters li:last-child {
   margin-right: 0;
@@ -634,10 +696,10 @@ p {
   right: 40px;
   font-size: 24px;
   top: calc(50% - 18px);
-  color: #86c6f4;
+  color: #212121;
 }
 #portfolio .portfolio-item .portfolio-info .preview-link:hover, #portfolio .portfolio-item .portfolio-info .details-link:hover {
-  color: #cab89f;
+  color: #2C3333;
 }
 #portfolio .portfolio-item .portfolio-info .details-link {
   right: 10px;
@@ -665,10 +727,10 @@ p {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #86c6f4;
+  border: 1px solid #212121;
 }
 .portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #86c6f4;
+  background-color: #212121;
 }
 .portfolio-details .portfolio-info {
   padding: 30px;
@@ -747,7 +809,7 @@ p {
 }
 
 .journal-block .journal-info .journal-txt h4 a:hover {
-  color: #86c6f4;
+  color: #212121;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -889,7 +951,7 @@ p {
 }
 
 .journal-txt h4 a:hover {
-  color: #86c6f4;
+  color: #212121;
   transition: all 0.5s ease-in-out 0s;
 }
 
@@ -973,7 +1035,7 @@ blockquote {
   background-color: #f2f2f2;
   margin: 30px 0;
   border: none;
-  border-left: 4px solid #86c6f4;
+  border-left: 4px solid #212121;
 }
 
 /*--------------------------------------------------------------
@@ -1003,7 +1065,7 @@ blockquote {
 
 #footer .socials-media ul li a {
   font-size: 24px;
-  color: #999;
+  color: #212121;
   letter-spacing: 0.1em;
   font-weight: 500;
   background: transparent;
@@ -1107,6 +1169,7 @@ blockquote {
     margin-bottom: 30px;
   }
 
+
   /* Footer */
   #footer .socials-media ul li {
     margin-right: 0;
@@ -1114,6 +1177,7 @@ blockquote {
     float: none;
     display: inline-block;
   }
+
 }
 /** Width between 767px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1195,6 +1259,8 @@ blockquote {
     float: none;
     display: inline-block;
   }
+
+
 }
 /** Width between 600px to 0
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1442,4 +1508,41 @@ blockquote {
     display: inline-block;
     margin-right: 0;
   }
+}
+
+
+.skills .skill-block {
+    position: relative;
+    display: block;
+    text-align: left;
+    padding: 10px 10px;
+    background: #e9e9e9;
+    margin-bottom: 18px;
+    border-radius: 10px;
+}
+
+.skill-block .skill-title {
+    position: relative;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 8px;
+    line-height: 14px;
+    border-bottom: 5px solid #212121;
+    display: inline;
+    padding-bottom: 8px;
+}
+
+.skill-block .skill-block-inner {
+    position: relative;
+    background: #fafafa;
+    border-radius: 7px;
+    padding: 15px 20px 20px;
+}
+
+.section-title .head-title {
+    border-bottom: 5px solid #212121;
+    display: inline;
+    padding-bottom: 10px;
+
 }

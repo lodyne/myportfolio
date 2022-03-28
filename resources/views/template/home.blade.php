@@ -15,7 +15,7 @@
         <!-- End Projects Section -->
 
         <!-- ======= Testimonials Section ======= -->
-            @include('template.partials.testimonials')
+            {{-- @include('template.partials.testimonials') --}}
         <!-- End Journal Section -->
 
         <!-- ======= Contact Section ======= -->
