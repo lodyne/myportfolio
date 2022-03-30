@@ -5,7 +5,7 @@
             <div class="col-lg-4 ">
                 <div class="div-img-bg">
                     <div class="about-img">
-                        <img src="assets/img/lody.jpg" class="img-responsive" alt="me">
+                        <img src="assets/img/pic.jpg" class="img-responsive" alt="me">
                     </div>
                 </div>
             </div>

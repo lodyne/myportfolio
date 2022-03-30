@@ -1,7 +1,7 @@
 <div id="hero" class="home">
     <div class="container">
         <div class="hero-content">
-            <h3>Hello there ...<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px"></h3>
+            <h3>Hello there ...<img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="40px" alt="hi"></h3>
             <h1>I'm <span class="typed" data-typed-items="Lodger Mtui,Software Developer, Web Designer, App Developer,Data Analyst"></span></h1>
             <h2>I design and develop</h2>
             <h2>solutions that solve</h2>
